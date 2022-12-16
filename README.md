@@ -1,4 +1,4 @@
-# Myelectricaldata-Graphana-Dashbord
+# Myelectricaldata-Graphana-Dashboard
 Based on m4dm4rtig4n dashboard, I just updated the panel with the new db DATABASE.RETENTION
 
 Do not forget to configure your variables in the dashboard settings (pdl, prices...)
