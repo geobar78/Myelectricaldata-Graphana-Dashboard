@@ -18,6 +18,9 @@ blackmirror1-singlestat-math-panel
 
 Add the data source / Ajouter la datasource DATABASE (create in Influxdb DATABASE Bucket RETENTION)
 
+![image](https://user-images.githubusercontent.com/75928935/208238073-b9543fff-e2fc-47d2-b559-6665d0708795.png)
+
+
 ![Config datasources](https://user-images.githubusercontent.com/75928935/208145020-567beac6-5b6b-4870-bb44-afb3b662c169.jpg)
 
 Do not forget to configure your variables in the dashboard settings (pdl, prices...) / N'oubliez pas de mettre à jour vos variables dans la configuration du dashboard
