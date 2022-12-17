@@ -5,7 +5,7 @@ Basé sur le dashbord myenedis de m4dm4rtig4n, j'ai juste mis à jour les panels
 
 Only work with Influxdb 1.8.x / Ne fonctionne qu'avec InfluxDB <= 1.8.x
 
-Note that to use the dashboard you will need / Notez que pour utiliser le dashboard vous aurez besoin de :
+Note that to use the dashboard you will need in Graphana / Notez que pour utiliser le dashboard vous aurez besoin dans Graphana de :
 
 Add the plugins / Ajouter les plugins:
 
