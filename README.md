@@ -3,6 +3,8 @@ Based on m4dm4rtig4n dashboard, I just updated the panel with the new db DATABAS
 
 Basé sur le dashbord myenedis de m4dm4rtig4n, j'ai juste mis à jour les panels avec la configuration de la nouvelle base utilisée par la v0.8.x de l'addon Myelectricaldata
 
+Only work with Influxdb 1.8.x / Ne fonctionne qu'avec InfluxDB <= 1.8.x
+
 Note that to use the dashboard you will need / Notez que pour utiliser le dashboard vous aurez besoin de :
 
 Add the plugins / Ajouter les plugins:
