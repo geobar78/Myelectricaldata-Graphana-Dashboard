@@ -20,6 +20,9 @@ Add the data source / Ajouter la datasource DATABASE (create in Influxdb DATABAS
 
 ![image](https://user-images.githubusercontent.com/75928935/208238073-b9543fff-e2fc-47d2-b559-6665d0708795.png)
 
+![image](https://user-images.githubusercontent.com/75928935/209825354-11c9b0c2-1f99-46fd-9ab9-96177852446a.png)
+
+Dans Graphana :
 
 ![Config datasources](https://user-images.githubusercontent.com/75928935/208145020-567beac6-5b6b-4870-bb44-afb3b662c169.jpg)
 
