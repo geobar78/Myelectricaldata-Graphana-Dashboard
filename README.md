@@ -26,6 +26,13 @@ Dans Graphana :
 
 ![Config datasources](https://user-images.githubusercontent.com/75928935/208145020-567beac6-5b6b-4870-bb44-afb3b662c169.jpg)
 
+![image](https://user-images.githubusercontent.com/75928935/209827016-e74f69aa-9a67-439e-9e96-ca009e736802.png)
+
+
+![image](https://user-images.githubusercontent.com/75928935/209826576-e64f752b-9a2b-4076-b91a-66b1c16267b1.png)
+
+
+
 Do not forget to configure your variables in the dashboard settings (pdl, prices...) / N'oubliez pas de mettre à jour vos variables dans la configuration du dashboard
 
 
