@@ -1,83 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "DS_INFLUXDB-MYELECTRICALDATA",
-      "label": "InfluxDB-Myelectricaldata",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "influxdb",
-      "pluginName": "InfluxDB"
-    }
-  ],
-  "__elements": {},
-  "__requires": [
-    {
-      "type": "panel",
-      "id": "blackmirror1-singlestat-math-panel",
-      "name": "Singlestat Math",
-      "version": "1.1.8"
-    },
-    {
-      "type": "panel",
-      "id": "farski-blendstat-panel",
-      "name": "Blendstat",
-      "version": "1.0.3"
-    },
-    {
-      "type": "panel",
-      "id": "gauge",
-      "name": "Gauge",
-      "version": ""
-    },
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "9.2.4"
-    },
-    {
-      "type": "panel",
-      "id": "graph",
-      "name": "Graph (old)",
-      "version": ""
-    },
-    {
-      "type": "datasource",
-      "id": "influxdb",
-      "name": "InfluxDB",
-      "version": "1.0.0"
-    },
-    {
-      "type": "panel",
-      "id": "piechart",
-      "name": "Pie chart",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "stat",
-      "name": "Stat",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "table",
-      "name": "Table",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "text",
-      "name": "Text",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "timeseries",
-      "name": "Time series",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": [
       {
@@ -103,14 +24,14 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": null,
+  "id": 9,
   "links": [],
   "liveNow": false,
   "panels": [
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -164,7 +85,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -229,7 +150,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -289,7 +210,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -363,7 +284,7 @@
       ],
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "decimals": 2,
       "format": "none",
@@ -421,7 +342,7 @@
           "alias": "HC",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -475,7 +396,7 @@
           "alias": "HP",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -549,7 +470,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -726,7 +647,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [],
           "hide": false,
@@ -770,7 +691,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -860,7 +781,7 @@
           "alias": "HP",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [],
           "hide": false,
@@ -899,7 +820,7 @@
           "alias": "HC",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [],
           "hide": false,
@@ -939,7 +860,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -999,7 +920,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -1064,7 +985,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -1124,7 +1045,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -1189,7 +1110,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -1249,7 +1170,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -1308,7 +1229,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -1368,7 +1289,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -1388,6 +1309,8 @@
           "measurement": "consumption",
           "orderByTime": "ASC",
           "policy": "RETENTION",
+          "query": "SELECT sum(\"Wh\") /1000*$price_STD FROM \"RETENTION\".\"consumption\" WHERE (\"usage_point_id\" =~ /^$pdl$/) AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
           "select": [
@@ -1428,7 +1351,7 @@
       "colorValue": true,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "decimals": 2,
       "defaultColor": "rgb(117, 117, 117)",
@@ -1500,7 +1423,7 @@
           "alias": "HC",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -1554,7 +1477,7 @@
           "alias": "HP",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -1608,7 +1531,7 @@
           "alias": "STD",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -1628,6 +1551,8 @@
           "measurement": "consumption",
           "orderByTime": "ASC",
           "policy": "RETENTION",
+          "query": "SELECT sum(\"Wh\") /1000*$price_STD FROM \"RETENTION\".\"consumption\" WHERE (\"usage_point_id\" =~ /^$pdl$/) AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": true,
           "refId": "C",
           "resultFormat": "time_series",
           "select": [
@@ -1685,7 +1610,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -1787,7 +1712,7 @@
           "alias": "HC",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -1842,7 +1767,7 @@
           "alias": "HP",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -1908,7 +1833,7 @@
       "dashes": false,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "decimals": 1,
       "fieldConfig": {
@@ -1967,7 +1892,7 @@
           "alias": "Watt/Day",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -2051,7 +1976,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "description": "",
       "gridPos": {
@@ -2075,7 +2000,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "refId": "A"
         }
@@ -2086,7 +2011,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "description": "",
       "gridPos": {
@@ -2110,7 +2035,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "refId": "A"
         }
@@ -2121,7 +2046,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "description": "",
       "gridPos": {
@@ -2145,7 +2070,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "refId": "A"
         }
@@ -2156,7 +2081,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -2205,7 +2130,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -2266,7 +2191,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -2317,7 +2242,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [],
           "hide": false,
@@ -2374,7 +2299,7 @@
       "colorValue": true,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "decimals": 2,
       "defaultColor": "rgb(117, 117, 117)",
@@ -2439,7 +2364,7 @@
           "alias": "current_year",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [],
           "hide": false,
@@ -2482,7 +2407,7 @@
           "alias": "last_year",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "hide": false,
           "query": "SELECT sum(\"price\") FROM \"RETENTION\".\"consumption\" WHERE (\"usage_point_id\" =~ /^$pdl$/ AND \"year\" = '2022') ",
@@ -2524,7 +2449,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -2573,7 +2498,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [],
           "hide": false,
@@ -2627,7 +2552,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -2678,7 +2603,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [],
           "hide": false,
@@ -2735,7 +2660,7 @@
       "colorValue": true,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "decimals": 2,
       "defaultColor": "rgb(117, 117, 117)",
@@ -2800,7 +2725,7 @@
           "alias": "current_year",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [],
           "hide": false,
@@ -2843,7 +2768,7 @@
           "alias": "last_year",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "hide": false,
           "query": "SELECT sum(\"price\") FROM \"RETENTION\".\"consumption\" WHERE (\"usage_point_id\" =~ /^$pdl$/ AND \"year\" = '2021') ",
@@ -2885,7 +2810,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -2934,7 +2859,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [],
           "hide": false,
@@ -2988,7 +2913,7 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
@@ -3039,7 +2964,7 @@
         {
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [],
           "hide": false,
@@ -3093,10 +3018,13 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
+          "color": {
+            "mode": "continuous-GrYlRd"
+          },
           "custom": {
             "align": "center",
             "displayMode": "json-view",
@@ -3194,7 +3122,7 @@
           "alias": "$tag_year",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -3274,10 +3202,13 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
+          "color": {
+            "mode": "continuous-GrYlRd"
+          },
           "custom": {
             "align": "center",
             "displayMode": "json-view",
@@ -3375,7 +3306,7 @@
           "alias": "$tag_year",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -3455,10 +3386,13 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
+          "color": {
+            "mode": "continuous-GrYlRd"
+          },
           "custom": {
             "align": "center",
             "displayMode": "json-view",
@@ -3556,7 +3490,7 @@
           "alias": "$tag_year",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -3636,12 +3570,12 @@
     {
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
       "fieldConfig": {
         "defaults": {
           "color": {
-            "mode": "palette-classic"
+            "mode": "continuous-BlYlRd"
           },
           "custom": {
             "axisCenteredZero": false,
@@ -3649,15 +3583,15 @@
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
-            "drawStyle": "bars",
+            "drawStyle": "line",
             "fillOpacity": 100,
-            "gradientMode": "none",
+            "gradientMode": "scheme",
             "hideFrom": {
               "legend": false,
               "tooltip": false,
               "viz": false
             },
-            "lineInterpolation": "stepAfter",
+            "lineInterpolation": "smooth",
             "lineWidth": 2,
             "pointSize": 5,
             "scaleDistribution": {
@@ -3737,7 +3671,7 @@
           "alias": "HC",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -3787,12 +3721,117 @@
             }
           ],
           "tz": "Europe/Paris"
+        }
+      ],
+      "timeShift": "12h",
+      "title": "Electricity HC Consumption - in (k)Wh",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "Yhbm9AF4k"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "continuous-GrYlRd"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 100,
+            "gradientMode": "scheme",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "smooth",
+            "lineWidth": 2,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green"
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          },
+          "unit": "watth"
         },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Puissance souscrite"
+            },
+            "properties": [
+              {
+                "id": "unit",
+                "value": "kvoltamp"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 10,
+        "w": 24,
+        "x": 0,
+        "y": 46
+      },
+      "hideTimeOverride": false,
+      "id": 58,
+      "interval": "10m",
+      "links": [],
+      "options": {
+        "legend": {
+          "calcs": [
+            "min",
+            "max",
+            "lastNotNull",
+            "sum",
+            "mean"
+          ],
+          "displayMode": "table",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "8.2.2",
+      "targets": [
         {
           "alias": "HP",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -3847,78 +3886,126 @@
         }
       ],
       "timeShift": "12h",
-      "title": "Electricity Consumption - in (k)Wh",
+      "title": "Electricity HP Consumption - in (k)Wh",
       "type": "timeseries"
     },
     {
-      "aliasColors": {},
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
       "datasource": {
         "type": "influxdb",
-        "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+        "uid": "Yhbm9AF4k"
       },
-      "decimals": 1,
       "fieldConfig": {
         "defaults": {
-          "links": []
+          "color": {
+            "mode": "continuous-GrYlRd"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 10,
+            "gradientMode": "scheme",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "smooth",
+            "lineWidth": 1,
+            "pointSize": 8,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "never",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "area"
+            }
+          },
+          "links": [],
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "transparent"
+              },
+              {
+                "color": "red",
+                "value": 90000
+              }
+            ]
+          },
+          "unit": "kwatth"
         },
-        "overrides": []
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Watt/Day"
+            },
+            "properties": [
+              {
+                "id": "color",
+                "value": {
+                  "fixedColor": "#508642",
+                  "mode": "continuous-GrYlRd"
+                }
+              },
+              {
+                "id": "custom.pointSize",
+                "value": 10
+              },
+              {
+                "id": "custom.lineStyle",
+                "value": {
+                  "fill": "solid"
+                }
+              }
+            ]
+          }
+        ]
       },
-      "fill": 1,
-      "fillGradient": 0,
       "gridPos": {
         "h": 10,
         "w": 24,
         "x": 0,
-        "y": 46
+        "y": 56
       },
-      "hiddenSeries": false,
       "hideTimeOverride": false,
       "id": 56,
-      "legend": {
-        "alignAsTable": true,
-        "avg": true,
-        "current": false,
-        "max": true,
-        "min": true,
-        "show": true,
-        "total": true,
-        "values": true
-      },
-      "lines": false,
-      "linewidth": 1,
       "links": [],
-      "nullPointMode": "null",
       "options": {
-        "alertThreshold": true
-      },
-      "paceLength": 10,
-      "percentage": false,
-      "pluginVersion": "9.2.4",
-      "pointradius": 3,
-      "points": true,
-      "renderer": "flot",
-      "seriesOverrides": [
-        {
-          "$$hashKey": "object:96",
-          "alias": "Watt/Day",
-          "color": "#508642",
-          "dashLength": 20,
-          "dashes": true,
-          "pointradius": 4
+        "legend": {
+          "calcs": [
+            "mean",
+            "max",
+            "min",
+            "sum"
+          ],
+          "displayMode": "table",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
         }
-      ],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": true,
+      },
+      "pluginVersion": "9.2.4",
       "targets": [
         {
           "alias": "Watt/Day",
           "datasource": {
             "type": "influxdb",
-            "uid": "${DS_INFLUXDB-MYELECTRICALDATA}"
+            "uid": "Yhbm9AF4k"
           },
           "groupBy": [
             {
@@ -3958,47 +4045,9 @@
           ]
         }
       ],
-      "thresholds": [
-        {
-          "colorMode": "critical",
-          "fill": true,
-          "line": false,
-          "op": "gt",
-          "value": 90000,
-          "yaxis": "right"
-        }
-      ],
-      "timeRegions": [],
       "timeShift": "12h",
       "title": "Electricity Consumption - per Day (k)Wh",
-      "tooltip": {
-        "shared": true,
-        "sort": 0,
-        "value_type": "individual"
-      },
-      "type": "graph",
-      "xaxis": {
-        "mode": "time",
-        "show": true,
-        "values": []
-      },
-      "yaxes": [
-        {
-          "$$hashKey": "object:80",
-          "format": "kwatth",
-          "logBase": 1,
-          "show": true
-        },
-        {
-          "$$hashKey": "object:81",
-          "format": "short",
-          "logBase": 1,
-          "show": false
-        }
-      ],
-      "yaxis": {
-        "align": false
-      }
+      "type": "timeseries"
     }
   ],
   "refresh": false,
@@ -4148,6 +4197,6 @@
   "timezone": "",
   "title": "My Electrical Data",
   "uid": "UNAJ_QxGz2",
-  "version": 79,
+  "version": 5,
   "weekStart": ""
 }
