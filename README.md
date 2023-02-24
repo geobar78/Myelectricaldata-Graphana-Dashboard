@@ -31,7 +31,19 @@ Dans Graphana :
 
 ![image](https://user-images.githubusercontent.com/75928935/209826576-e64f752b-9a2b-4076-b91a-66b1c16267b1.png)
 
+Import the dashboard / Importez le dashboard
 
+![image](https://user-images.githubusercontent.com/75928935/221192239-69905ebb-25fa-41a0-bdf0-3af779cf6b20.png)
+
+copy and past the json here / Copiez collez le fichier json là 
+
+![image](https://user-images.githubusercontent.com/75928935/221192562-1f3deb04-909b-4fd4-9e0e-782cf429d8da.png)
+
+and load / et chargez 
+
+![image](https://user-images.githubusercontent.com/75928935/221192985-f1e75e39-d5c4-4e32-8b17-48030dcbad04.png)
+
+Change the name if you want and configure the datasource / Changez le nom si vous le voulez et configurez la database source Influxdb DATABASE
 
 Do not forget to configure your variables in the dashboard settings (pdl, prices...) / N'oubliez pas de mettre à jour vos variables dans la configuration du dashboard
 
