@@ -49,3 +49,12 @@ It should give you something like this / ça devrait vous donner quelque chose c
 
 ![208099593-c228fcd7-b1e4-48ed-a7a3-ba7abebb50ee](https://user-images.githubusercontent.com/75928935/208125317-0655d357-5ed8-446d-b19c-76c6498c896c.png)
 
+Edit du 24/02/23  bug fixes and visual improvements / correction de bugs et amélioration du visuel
+
+![image](https://user-images.githubusercontent.com/75928935/221165555-213d0e16-cbad-462d-96ec-4f0532f40f32.png)
+
+![image](https://user-images.githubusercontent.com/75928935/221165600-bbf03a4d-147f-43e0-8088-cec346bf6d43.png)
+
+![image](https://user-images.githubusercontent.com/75928935/221165644-944de46f-7527-425b-8c0d-184a7c0f48e7.png)
+
+![image](https://user-images.githubusercontent.com/75928935/221165676-619ee03e-7230-46a9-8e3f-24ea2ddde91d.png)
