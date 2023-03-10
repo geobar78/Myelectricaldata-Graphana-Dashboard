@@ -80,7 +80,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -205,7 +205,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -642,7 +642,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -915,7 +915,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -1040,7 +1040,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -1165,7 +1165,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -1284,8 +1284,19 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
+        {
+          "datasource": {
+            "name": "Expression",
+            "type": "__expr__",
+            "uid": "__expr__"
+          },
+          "expression": "$A/1000*$price_STD",
+          "hide": false,
+          "refId": "B",
+          "type": "math"
+        },
         {
           "datasource": {
             "type": "influxdb",
@@ -1305,19 +1316,19 @@
               "type": "fill"
             }
           ],
-          "hide": false,
+          "hide": true,
           "measurement": "consumption",
           "orderByTime": "ASC",
           "policy": "RETENTION",
-          "query": "SELECT sum(\"Wh\") /1000*$price_STD FROM \"RETENTION\".\"consumption\" WHERE (\"usage_point_id\" =~ /^$pdl$/) AND $timeFilter GROUP BY time($__interval) fill(null)",
-          "rawQuery": true,
+          "query": "SELECT sum(\"Wh\")  FROM \"RETENTION\".\"consumption\" WHERE (\"usage_point_id\" =~ /^$pdl$/) AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": false,
           "refId": "A",
           "resultFormat": "time_series",
           "select": [
             [
               {
                 "params": [
-                  "price"
+                  "Wh"
                 ],
                 "type": "field"
               },
@@ -1547,19 +1558,19 @@
               "type": "fill"
             }
           ],
-          "hide": false,
+          "hide": true,
           "measurement": "consumption",
           "orderByTime": "ASC",
           "policy": "RETENTION",
-          "query": "SELECT sum(\"Wh\") /1000*$price_STD FROM \"RETENTION\".\"consumption\" WHERE (\"usage_point_id\" =~ /^$pdl$/) AND $timeFilter GROUP BY time($__interval) fill(null)",
-          "rawQuery": true,
+          "query": "SELECT sum(\"Wh\") FROM \"RETENTION\".\"consumption\" WHERE (\"usage_point_id\" =~ /^$pdl$/) AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": false,
           "refId": "C",
           "resultFormat": "time_series",
           "select": [
             [
               {
                 "params": [
-                  "price"
+                  "Wh"
                 ],
                 "type": "field"
               },
@@ -1576,6 +1587,17 @@
               "value": "/^$pdl$/"
             }
           ]
+        },
+        {
+          "datasource": {
+            "name": "Expression",
+            "type": "__expr__",
+            "uid": "__expr__"
+          },
+          "expression": "$C/1000*$price_STD",
+          "hide": false,
+          "refId": "D",
+          "type": "math"
         }
       ],
       "thresholds": [
@@ -1871,7 +1893,7 @@
       },
       "paceLength": 10,
       "percentage": false,
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "pointradius": 3,
       "points": true,
       "renderer": "flot",
@@ -1995,7 +2017,7 @@
         "content": "",
         "mode": "markdown"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -2030,7 +2052,7 @@
         "content": "",
         "mode": "markdown"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -2065,7 +2087,7 @@
         "content": "",
         "mode": "markdown"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -2093,7 +2115,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "blue"
+                "color": "blue",
+                "value": null
               }
             ]
           },
@@ -2125,7 +2148,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -2203,7 +2226,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "yellow"
+                "color": "yellow",
+                "value": null
               }
             ]
           },
@@ -2237,7 +2261,7 @@
         },
         "textMode": "value"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -2461,7 +2485,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "blue"
+                "color": "blue",
+                "value": null
               }
             ]
           },
@@ -2493,7 +2518,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -2564,7 +2589,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "yellow"
+                "color": "yellow",
+                "value": null
               }
             ]
           },
@@ -2598,7 +2624,7 @@
         },
         "textMode": "value"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -2822,7 +2848,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "blue"
+                "color": "blue",
+                "value": null
               }
             ]
           },
@@ -2854,7 +2881,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -2925,7 +2952,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "yellow"
+                "color": "yellow",
+                "value": null
               }
             ]
           },
@@ -2959,7 +2987,7 @@
         },
         "textMode": "value"
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "datasource": {
@@ -3027,7 +3055,9 @@
           },
           "custom": {
             "align": "center",
-            "displayMode": "json-view",
+            "cellOptions": {
+              "type": "json-view"
+            },
             "filterable": false,
             "inspect": false
           },
@@ -3038,7 +3068,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -3056,8 +3087,11 @@
             },
             "properties": [
               {
-                "id": "custom.displayMode",
-                "value": "gradient-gauge"
+                "id": "custom.cellOptions",
+                "value": {
+                  "mode": "gradient",
+                  "type": "gauge"
+                }
               },
               {
                 "id": "unit",
@@ -3101,6 +3135,7 @@
       "links": [],
       "options": {
         "footer": {
+          "countRows": false,
           "fields": "",
           "reducer": [
             "sum"
@@ -3116,7 +3151,7 @@
           }
         ]
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "alias": "$tag_year",
@@ -3211,7 +3246,9 @@
           },
           "custom": {
             "align": "center",
-            "displayMode": "json-view",
+            "cellOptions": {
+              "type": "json-view"
+            },
             "filterable": false,
             "inspect": false
           },
@@ -3222,7 +3259,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -3240,8 +3278,11 @@
             },
             "properties": [
               {
-                "id": "custom.displayMode",
-                "value": "gradient-gauge"
+                "id": "custom.cellOptions",
+                "value": {
+                  "mode": "gradient",
+                  "type": "gauge"
+                }
               },
               {
                 "id": "unit",
@@ -3285,6 +3326,7 @@
       "links": [],
       "options": {
         "footer": {
+          "countRows": false,
           "fields": "",
           "reducer": [
             "sum"
@@ -3300,7 +3342,7 @@
           }
         ]
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "alias": "$tag_year",
@@ -3395,7 +3437,9 @@
           },
           "custom": {
             "align": "center",
-            "displayMode": "json-view",
+            "cellOptions": {
+              "type": "json-view"
+            },
             "filterable": false,
             "inspect": false
           },
@@ -3406,7 +3450,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -3424,8 +3469,11 @@
             },
             "properties": [
               {
-                "id": "custom.displayMode",
-                "value": "gradient-gauge"
+                "id": "custom.cellOptions",
+                "value": {
+                  "mode": "gradient",
+                  "type": "gauge"
+                }
               },
               {
                 "id": "unit",
@@ -3469,6 +3517,7 @@
       "links": [],
       "options": {
         "footer": {
+          "countRows": false,
           "fields": "",
           "reducer": [
             "sum"
@@ -3484,7 +3533,7 @@
           }
         ]
       },
-      "pluginVersion": "9.2.4",
+      "pluginVersion": "9.4.3",
       "targets": [
         {
           "alias": "$tag_year",
@@ -4050,8 +4099,9 @@
       "type": "timeseries"
     }
   ],
-  "refresh": false,
-  "schemaVersion": 37,
+  "refresh": "",
+  "revision": 1,
+  "schemaVersion": 38,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -4197,6 +4247,6 @@
   "timezone": "",
   "title": "My Electrical Data",
   "uid": "UNAJ_QxGz2",
-  "version": 5,
+  "version": 7,
   "weekStart": ""
 }
