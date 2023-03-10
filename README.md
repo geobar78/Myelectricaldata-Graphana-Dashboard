@@ -70,3 +70,9 @@ Edit du 24/02/23  bug fixes and visual improvements / correction de bugs et amé
 ![image](https://user-images.githubusercontent.com/75928935/221165644-944de46f-7527-425b-8c0d-184a7c0f48e7.png)
 
 ![image](https://user-images.githubusercontent.com/75928935/221165676-619ee03e-7230-46a9-8e3f-24ea2ddde91d.png)
+
+Edit suite à la mise à jour de l'addon vous risquez de vous retrouver avec cette erreur :
+
+![image](https://user-images.githubusercontent.com/75928935/224374364-9ae90775-80c5-4afd-8df4-e7f0a940ef9b.png)
+
+J'ai mis à jour le json pour corriger ce défaut.
