@@ -24,7 +24,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 9,
+  "id": 13,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -80,7 +80,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -205,7 +205,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -642,7 +642,7 @@
         "showThresholdMarkers": true,
         "text": {}
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -654,7 +654,7 @@
           "measurement": "consumption",
           "orderByTime": "ASC",
           "policy": "RETENTION",
-          "query": "SELECT sum(\"Wh\")  / $surface_maison /1000 FROM \"RETENTION\".\"consumption\" WHERE (\"usage_point_id\" =~ /^$pdl$/) AND time <=now() and time >=now() -365d GROUP BY time($__interval) fill(none)",
+          "query": "SELECT sum(\"Wh\")  / $surface_maison /1000 FROM \"RETENTION\".\"consumption_detail\" WHERE (\"usage_point_id\" =~ /^$pdl$/) AND time <=now() and time >=now() -365d GROUP BY time($__interval) fill(none)",
           "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
@@ -915,7 +915,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -1040,7 +1040,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -1165,7 +1165,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -1178,16 +1178,10 @@
                 "$__interval"
               ],
               "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
             }
           ],
           "hide": false,
-          "measurement": "consumption",
+          "measurement": "consumption_detail",
           "orderByTime": "ASC",
           "policy": "RETENTION",
           "query": "SELECT sum(\"W\") FROM \"consumption_detail\" WHERE $timeFilter GROUP BY time($__interval) fill(null)",
@@ -1284,7 +1278,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -1308,16 +1302,10 @@
                 "$__interval"
               ],
               "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
             }
           ],
           "hide": true,
-          "measurement": "consumption",
+          "measurement": "consumption_detail",
           "orderByTime": "ASC",
           "policy": "RETENTION",
           "query": "SELECT sum(\"Wh\")  FROM \"RETENTION\".\"consumption\" WHERE (\"usage_point_id\" =~ /^$pdl$/) AND $timeFilter GROUP BY time($__interval) fill(null)",
@@ -1396,7 +1384,7 @@
           "value": 2
         }
       ],
-      "math": "100 - (100 * STD / (HP+HC))",
+      "math": "100 - (100 * D / (HP+HC))",
       "maxDataPoints": 100,
       "nullPointMode": "connected",
       "pluginVersion": "6.6.1",
@@ -1442,12 +1430,6 @@
                 "$__interval"
               ],
               "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
             }
           ],
           "hide": false,
@@ -1496,12 +1478,6 @@
                 "$__interval"
               ],
               "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
             }
           ],
           "hide": false,
@@ -1559,7 +1535,7 @@
             }
           ],
           "hide": true,
-          "measurement": "consumption",
+          "measurement": "consumption_detail",
           "orderByTime": "ASC",
           "policy": "RETENTION",
           "query": "SELECT sum(\"Wh\") FROM \"RETENTION\".\"consumption\" WHERE (\"usage_point_id\" =~ /^$pdl$/) AND $timeFilter GROUP BY time($__interval) fill(null)",
@@ -1617,7 +1593,7 @@
         "show": true
       },
       "type": "blackmirror1-singlestat-math-panel",
-      "valueFontSize": "110%",
+      "valueFontSize": "80%",
       "valueMappingColorBackground": "#767171",
       "valueMaps": [
         {
@@ -1893,7 +1869,7 @@
       },
       "paceLength": 10,
       "percentage": false,
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "pointradius": 3,
       "points": true,
       "renderer": "flot",
@@ -2017,7 +1993,7 @@
         "content": "",
         "mode": "markdown"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -2052,7 +2028,7 @@
         "content": "",
         "mode": "markdown"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -2087,7 +2063,7 @@
         "content": "",
         "mode": "markdown"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -2115,8 +2091,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "blue",
-                "value": null
+                "color": "blue"
               }
             ]
           },
@@ -2148,7 +2123,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -2226,8 +2201,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "yellow",
-                "value": null
+                "color": "yellow"
               }
             ]
           },
@@ -2261,7 +2235,7 @@
         },
         "textMode": "value"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -2485,8 +2459,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "blue",
-                "value": null
+                "color": "blue"
               }
             ]
           },
@@ -2518,7 +2491,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -2589,8 +2562,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "yellow",
-                "value": null
+                "color": "yellow"
               }
             ]
           },
@@ -2624,7 +2596,7 @@
         },
         "textMode": "value"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -2848,8 +2820,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "blue",
-                "value": null
+                "color": "blue"
               }
             ]
           },
@@ -2881,7 +2852,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -2952,8 +2923,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "yellow",
-                "value": null
+                "color": "yellow"
               }
             ]
           },
@@ -2987,7 +2957,7 @@
         },
         "textMode": "value"
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "datasource": {
@@ -3068,8 +3038,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -3151,7 +3120,7 @@
           }
         ]
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "alias": "$tag_year",
@@ -3259,8 +3228,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -3342,7 +3310,7 @@
           }
         ]
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "alias": "$tag_year",
@@ -3450,8 +3418,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -3533,7 +3500,7 @@
           }
         ]
       },
-      "pluginVersion": "9.4.3",
+      "pluginVersion": "9.4.7",
       "targets": [
         {
           "alias": "$tag_year",
@@ -4247,6 +4214,6 @@
   "timezone": "",
   "title": "My Electrical Data",
   "uid": "UNAJ_QxGz2",
-  "version": 7,
+  "version": 2,
   "weekStart": ""
 }
